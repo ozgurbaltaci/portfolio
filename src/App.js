@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Work from "./components/Work";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import Experience from "./components/Experience";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: '"DM Sans", sans-serif',
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          <Navbar />
+          <About />
+          <Skills />
+
+          <Experience></Experience>
+          <Work />
+          <Projects />
+          <Footer />
+        </div>
+      </ThemeProvider>
+    </>
   );
 }
 
