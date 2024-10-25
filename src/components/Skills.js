@@ -7,7 +7,14 @@ import nodejsIcon from "../SkillPictures/nodejs.png";
 import postgresqlIcon from "../SkillPictures/postgresql.png";
 import pythonIcon from "../SkillPictures/python.webp";
 import reactIcon from "../SkillPictures/react.webp";
+import htmlIcon from "../SkillPictures/html.png";
+import cssIcon from "../SkillPictures/css.png";
+import bootstrapIcon from "../SkillPictures/bootstrap.svg";
+import javaIcon from "../SkillPictures/java.png";
+import reduxIcon from "../SkillPictures/redux.png";
+
 import { Tooltip } from "react-tooltip";
+import { Grid } from "@mui/system";
 
 const skills = [
   { skillName: "ReactJS", skillIcon: reactIcon, backgroundColor: "#e9f7ff" },
@@ -19,8 +26,18 @@ const skills = [
     skillIcon: postgresqlIcon,
     backgroundColor: "#E1EAF4",
   },
-  { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
   { skillName: "Figma", skillIcon: figmaIcon, backgroundColor: "#FDE2D3" },
+
+  { skillName: "ReduxJS", skillIcon: reduxIcon, backgroundColor: "#f3e5f5" },
+  { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
+  { skillName: "HTML5", skillIcon: htmlIcon, backgroundColor: "#ffe0cc" },
+  { skillName: "CSS3", skillIcon: cssIcon, backgroundColor: "#E1EAF4" },
+  {
+    skillName: "Bootstrap",
+    skillIcon: bootstrapIcon,
+    backgroundColor: "#e8d9f1",
+  },
+
   { skillName: "Git", skillIcon: gitIcon, backgroundColor: "#FDE4DD" },
 ];
 
@@ -112,51 +129,68 @@ const Skills = () => {
         style={{
           display: "flex",
           justifyContent: "center",
-          marginBottom: "2.5rem",
+
+          padding: "1rem 0rem",
         }}
       >
-        Skills & Experiences:
+        <div style={{ display: "flex" }}>
+          <div>Skills</div>
+          <div className="just-skills-title">&nbsp;& Experiences</div>
+        </div>
       </h2>
 
-      <div style={{ display: "flex" }}>
+      <div className="skills-and-experiences">
+        {" "}
         <div className="skills-container">
-          <div className="skills-list">
+          <Grid container justifyContent="center" alignItems="center">
             {skills.map((item, index) => (
-              <div className="skills-item" key={index}>
-                <div style={{ backgroundColor: item.backgroundColor }}>
-                  <img src={item.skillIcon} alt={item.skillName} />
+              <Grid
+                className="skills-list"
+                item
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                key={index}
+              >
+                <div className="skills-item">
+                  <div style={{ backgroundColor: item.backgroundColor }}>
+                    <img src={item.skillIcon} alt={item.skillName} />
+                  </div>
+                  <p>{item.skillName}</p>
                 </div>
-                <p>{item.skillName}</p>
+              </Grid>
+            ))}
+          </Grid>
+        </div>{" "}
+        <div className="experiences-container">
+          <h3 className="experiences-title">Experiences</h3>
+          <div className="experiences-list">
+            {experiences.map((experience) => (
+              <div>
+                <div className="app__skills-exp-item" key={experience.year}>
+                  <div className="app__skills-exp-year">
+                    <h4>{experience.year}</h4>
+                  </div>
+                  <div className="app__skills-exp-works">
+                    {experience.works.map((work) => (
+                      <div
+                        className="app__skills-exp-work"
+                        key={work.name}
+                        data-tooltip-id={work.desc ? "my-tooltip" : undefined}
+                        data-tooltip-html={`<div>${work.desc}</div>`}
+                      >
+                        <h4 className="skills_company_name">{work.name}</h4>
+                        <p className="p-text">{work.company}</p>
+                        <p>{work.technologies_used}</p>
+                        <p>{work.workdates}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="experiences-container">
-          {experiences.map((experience) => (
-            <div>
-              <div className="app__skills-exp-item" key={experience.year}>
-                <div className="app__skills-exp-year">
-                  <p className="bold-text">{experience.year}</p>
-                </div>
-                <div className="app__skills-exp-works">
-                  {experience.works.map((work) => (
-                    <div
-                      className="app__skills-exp-work"
-                      key={work.name}
-                      data-tooltip-id={work.desc ? "my-tooltip" : undefined}
-                      data-tooltip-html={`<div>${work.desc}</div>`}
-                    >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
-                      <p>{work.technologies_used}</p>
-                      <p>{work.workdates}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
 
