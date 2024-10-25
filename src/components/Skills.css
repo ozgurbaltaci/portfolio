@@ -1,0 +1,175 @@
+.skills {
+  height: 100vh;
+  flex: 1;
+  width: 100%;
+}
+
+.skills-and-experiences {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-container,
+.experiences-container {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .skills {
+    height: auto !important;
+  }
+
+  .skills-container {
+    flex: 0 1 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .skills-list {
+    padding: 8px !important;
+  }
+
+  .experiences-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .experiences-title {
+    display: block !important;
+    padding: 0rem 0rem 1rem 0rem !important;
+  }
+  .just-skills-title {
+    display: none !important;
+  }
+
+  .skills-item div {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills-item p {
+    font-size: 11px !important;
+    width: 60px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills {
+    height: auto !important;
+  }
+}
+
+.skills-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 1rem;
+}
+.skills-list {
+  padding: 12px;
+}
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-item div {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-item p {
+  margin-top: 0.3rem;
+  font-size: 14px;
+  width: 70px;
+}
+
+.skills-item img {
+  width: 50%;
+  height: 50%;
+}
+
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem;
+}
+.experiences-title {
+  display: none;
+}
+
+.skills_company_name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.app__skills-exp-item {
+  width: 100%;
+  display: flex;
+}
+
+.app__skills-exp-works {
+  .app__skills-exp-work {
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    p {
+      font-weight: 400;
+      margin-top: 5px;
+    }
+  }
+}
+
+.app__skills-exp-year {
+  margin-right: 3rem;
+
+  p {
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-right: 1rem;
+  }
+}
+
+.app__skills-exp-work ul {
+  list-style-type: disc; /* Ensures bullet points are discs */
+  margin-left: 20px; /* Adjusts the left margin for indentation */
+  padding-left: 0; /* Resets padding to avoid extra space */
+}
+.skills-tooltip {
+  max-width: 300px !important;
+  background-color: #fff !important;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 5px !important;
+  padding: 1rem !important;
+  color: var(--gray-color) !important;
+  line-height: 1.5 !important;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem !important;
+    max-width: 500px !important;
+    line-height: 2 !important;
+  }
+}
+
+.skills-tooltip ul li {
+  font-size: 12px;
+}
+.skills-tooltip ul li + li {
+  margin-top: 5px;
+}

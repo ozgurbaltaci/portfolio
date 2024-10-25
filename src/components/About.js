@@ -1,14 +1,20 @@
 import { useState, useEffect } from "react";
-import {
-  Container,
-  Grid,
-  Typography,
-  Button,
-  Box,
-  Avatar,
-} from "@mui/material";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Container, Grid, Typography, Box, Avatar } from "@mui/material";
 import profilePicture from "../pp.jpg";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+// Create the theme
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+});
 
 export const About = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -57,49 +63,54 @@ export const About = () => {
   };
 
   return (
-    <section
-      style={{
-        backgroundImage: `url(${require("../About_Background.png")})`,
-        backgroundSize: "cover", // Adjust as needed
-      }}
-      className="banner"
-      id="home"
-    >
-      <Container maxWidth="lg">
-        <Grid container alignItems="center">
-          <Grid item xs={12} md={6}>
-            <Box>
-              <Typography variant="h2" component="h1">
-                {`Hi! I'm Özgür`} <div></div>
+    <ThemeProvider theme={theme}>
+      <div
+        style={{
+          backgroundImage: `url(${require("../About_Background.png")})`,
+          backgroundSize: "cover",
+          padding: "20px",
+        }}
+        className="banner"
+        id="home"
+      >
+        <Container maxWidth="lg">
+          <Grid container alignItems="center" spacing={2}>
+            <Grid
+              item
+              xs={12}
+              sm={4}
+              md={4}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                height: "100%",
+              }}
+            >
+              <Avatar
+                alt="Profile Picture"
+                src={profilePicture}
+                className="avatar-picture"
+                sx={{ width: 250, height: 250 }}
+              />
+            </Grid>
+            <Grid item xs={12} sm={8} md={8}>
+              <div className="about-hi">
+                <h1>{`Hi! I'm Özgür`}</h1>
                 <span className="txt-rotate" dataPeriod="1000">
                   <span className="wrap">{text}</span>
                 </span>
-              </Typography>
 
-              <Typography>
-                With 2+ years of experience, I am specializing in creating
-                responsive and visually appealing user interfaces and working
-                with data.
-              </Typography>
-              <Button
-                variant="contained"
-                endIcon={<ArrowRightAltIcon />}
-                onClick={() => console.log("connect")}
-              >
-                Let’s Connect
-              </Button>
-            </Box>
+                <Typography variant="body1" className="about-summary">
+                  With 2+ years of experience, I specialize in creating
+                  responsive and visually appealing user interfaces and working
+                  with data.
+                </Typography>
+              </div>
+            </Grid>
           </Grid>
-          <Grid className="avatar" item xs={12} md={6}>
-            <Avatar
-              alt="Profile Picture"
-              src={profilePicture}
-              sx={{ width: 300, height: 300 }}
-            />
-          </Grid>
-        </Grid>
-      </Container>
-    </section>
+        </Container>
+      </div>
+    </ThemeProvider>
   );
 };
 

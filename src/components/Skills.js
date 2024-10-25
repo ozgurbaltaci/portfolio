@@ -15,6 +15,7 @@ import reduxIcon from "../SkillPictures/redux.png";
 
 import { Tooltip } from "react-tooltip";
 import { Grid } from "@mui/system";
+import "./Skills.css";
 
 const skills = [
   { skillName: "ReactJS", skillIcon: reactIcon, backgroundColor: "#e9f7ff" },
