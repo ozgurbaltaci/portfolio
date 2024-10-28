@@ -1,7 +1,6 @@
 /************ Default Css ************/
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,7 +8,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #f9f9fc !important;
+  background-color: rgb(249, 249, 250) !important;
 
   color: #121212 !important;
   font-family: "Centra", "Cabin" !important;
@@ -50,6 +49,10 @@ p.danger {
 
   h1 {
     font-size: 24px !important; /* Adjusted font size for h1 */
+  }
+
+  .type-writer {
+    padding: 0 !important;
   }
 
   h2 {
@@ -284,15 +287,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about-hi {
   font-weight: bold;
-  font-size: 4rem;
   line-height: 1.2;
 }
-
+.about-hi h1 {
+  width: 100%;
+}
 @media (max-width: 900px) {
   .about-hi h1 {
     font-size: 3rem !important;
   }
 
+  .txt-rotate {
+    font-size: 2rem !important;
+  }
   .about-hi p {
     font-size: 1rem !important;
     line-height: 1.5;
@@ -304,15 +311,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 2rem !important;
   }
 
+  .txt-rotate {
+    font-size: 1.2rem !important;
+  }
+
   .banner .avatar-picture {
     width: 200px;
     height: 200px;
   }
 }
 
-.txt-rotate > .wrap {
-  border-right: 0.08em solid rgb(244, 183, 63);
-  color: rgb(244, 183, 63);
+.txt-rotate {
+  color: #f7c331;
+  font-size: 45px;
 }
 
 /************ Skills Css ************/

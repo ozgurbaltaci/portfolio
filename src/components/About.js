@@ -2,19 +2,10 @@ import { useState, useEffect } from "react";
 import { Container, Grid, Typography, Box, Avatar } from "@mui/material";
 import profilePicture from "../pp.jpg";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Typewriter from "typewriter-effect";
 
 // Create the theme
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-    },
-  },
-});
+const theme = createTheme({});
 
 export const About = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -22,45 +13,8 @@ export const About = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(180);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const titles = ["Web Developer", "Web Designer", "UI/UX Designer"];
   const period = 1600;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(200);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
-  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -96,9 +50,18 @@ export const About = () => {
             <Grid item xs={12} sm={8} md={8}>
               <div className="about-hi">
                 <h1>{`Hi! I'm Özgür`}</h1>
-                <span className="txt-rotate" dataPeriod="1000">
-                  <span className="wrap">{text}</span>
-                </span>
+                <Typewriter
+                  className="type-writer"
+                  options={{
+                    strings: titles,
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 100,
+                    delay: 100,
+                    wrapperClassName: "txt-rotate",
+                    cursorClassName: "txt-rotate",
+                  }}
+                />
 
                 <Typography variant="body1" className="about-summary">
                   With 2+ years of experience, I specialize in creating

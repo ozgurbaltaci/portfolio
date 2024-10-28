@@ -2,15 +2,22 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
-import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import Experience from "./components/Experience";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    fontFamily: '"DM Sans", sans-serif',
+    fontFamily: '"Poppins", sans-serif',
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 500,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
   },
 });
 
@@ -23,8 +30,6 @@ function App() {
           <About />
           <Skills />
 
-          <Experience></Experience>
-          <Work />
           <Projects />
           <Footer />
         </div>
