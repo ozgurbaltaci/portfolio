@@ -14,6 +14,76 @@ const projects = [
     demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
     liveLink: "https://handygreen.vercel.app/",
   },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
+  {
+    projectImg: require("../projects_pics/handyGreen.png"),
+    projectName: "HandyGreen Front-end",
+    projectDescription:
+      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    technologiesUsed: "ReactJS, MUI, JavaScript",
+    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
+    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
+    liveLink: "https://handygreen.vercel.app/",
+  },
 ];
 
 const Projects = () => {

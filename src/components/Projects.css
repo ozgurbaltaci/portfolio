@@ -1,3 +1,8 @@
+.projects {
+  background-color: #fff8ee;
+  height: auto;
+  min-height: 100vh;
+}
 .projects-container {
-  margin: 0 4rem;
+  padding: 0 4rem 4rem 4rem !important;
 }
