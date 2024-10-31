@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -31,6 +32,7 @@ function App() {
           <Skills />
 
           <Projects />
+          <Contact></Contact>
           <Footer />
         </div>
       </ThemeProvider>
