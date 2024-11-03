@@ -15,34 +15,13 @@ const projects = [
     liveLink: "https://handygreen.vercel.app/",
   },
   {
-    projectImg: require("../projects_pics/handyGreen.png"),
-    projectName: "HandyGreen Front-end",
-    projectDescription:
-      "E-commerce application for locals to sell their hand-made and/or organic products.",
+    projectImg: require("../projects_pics/portfolio.png"),
+    projectName: "Fully-responsive Portfolio",
+    projectDescription: "Portfolio of me",
     technologiesUsed: "ReactJS, MUI, JavaScript",
-    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
-    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
-    liveLink: "https://handygreen.vercel.app/",
-  },
-  {
-    projectImg: require("../projects_pics/handyGreen.png"),
-    projectName: "HandyGreen Front-end",
-    projectDescription:
-      "E-commerce application for locals to sell their hand-made and/or organic products.",
-    technologiesUsed: "ReactJS, MUI, JavaScript",
-    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
-    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
-    liveLink: "https://handygreen.vercel.app/",
-  },
-  {
-    projectImg: require("../projects_pics/handyGreen.png"),
-    projectName: "HandyGreen Front-end",
-    projectDescription:
-      "E-commerce application for locals to sell their hand-made and/or organic products.",
-    technologiesUsed: "ReactJS, MUI, JavaScript",
-    githubLink: "https://github.com/ozgurbaltaci/e-commerce",
-    demoLink: "https://www.youtube.com/watch?v=uOsiLIBxKVo",
-    liveLink: "https://handygreen.vercel.app/",
+    githubLink: "https://github.com/ozgurbaltaci/portfolio",
+    demoLink: "",
+    liveLink: "https://ozgurbaltaci.vercel.app/",
   },
 ];
 

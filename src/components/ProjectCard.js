@@ -14,7 +14,11 @@ const ProjectCard = ({ project }) => {
   };
 
   const handleLiveDemoClick = () => {
-    window.open(project.demoLink, "_blank");
+    if (project.demoLink !== "") {
+      window.open(project.demoLink, "_blank");
+    } else {
+      alert("I am sorry :( Demo is not available for this project yet.");
+    }
   };
 
   return (
