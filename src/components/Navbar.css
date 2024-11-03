@@ -15,7 +15,7 @@
   z-index: 30;
   color: var(--text-color);
   backdrop-filter: blur(10px);
-  padding: 0.5rem 3rem !important;
+  padding: 1rem 3rem !important;
 }
 
 /* Navbar Container */
