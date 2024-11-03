@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Grid, Typography, Box, Avatar } from "@mui/material";
-import profilePicture from "../pp.jpg";
+import profilePicture from "../pp.png";
+import blobPic from "../blob-haikei.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Typewriter from "typewriter-effect";
 
@@ -22,10 +23,9 @@ export const About = () => {
         style={{
           backgroundImage: `url(${require("../About_Background.png")})`,
           backgroundSize: "cover",
-          padding: "20px",
         }}
-        className="banner"
-        id="home"
+        className="banner global_padding"
+        id="About"
       >
         <Container maxWidth="lg">
           <Grid container alignItems="center" spacing={2}>
@@ -40,12 +40,32 @@ export const About = () => {
                 height: "100%",
               }}
             >
-              <Avatar
-                alt="Profile Picture"
-                src={profilePicture}
-                className="avatar-picture"
-                sx={{ width: 250, height: 250 }}
-              />
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <img
+                  src={blobPic}
+                  alt="Background"
+                  style={{
+                    paddingTop: "10px",
+                    width: "400px",
+                    height: "auto",
+                    objectFit: "cover",
+                  }}
+                />
+                <img
+                  alt="Profile Picture"
+                  src={profilePicture}
+                  className="avatar-picture"
+                  style={{
+                    width: "250px", // Set a fixed size for the avatar
+                    height: "230px", // Adjust to your desired size
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    borderRadius: "50%",
+                    transform: "translate(-50%, -50%)",
+                  }}
+                />
+              </div>
             </Grid>
             <Grid item xs={12} sm={8} md={8}>
               <div className="about-hi">

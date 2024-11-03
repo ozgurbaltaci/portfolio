@@ -125,7 +125,7 @@ const experiences = [
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div id="Skills&Experiences" className="skills global_padding">
       <h2
         style={{
           display: "flex",
@@ -143,7 +143,7 @@ const Skills = () => {
       <div className="skills-and-experiences">
         {" "}
         <div className="skills-container">
-          <Grid container justifyContent="center" alignItems="center">
+          <Grid container className="skills-grid">
             {skills.map((item, index) => (
               <Grid
                 className="skills-list"

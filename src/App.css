@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.global_padding {
+  padding: 0 3rem !important;
+}
+
 textarea {
   resize: none;
 }
@@ -262,9 +266,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner {
   margin-top: 0;
-  padding: 100px 0;
   overflow: hidden;
-  height: calc(100vh - 40px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

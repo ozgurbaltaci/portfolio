@@ -48,7 +48,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div id="Projects" className="projects">
       <h2
         style={{
           display: "flex",

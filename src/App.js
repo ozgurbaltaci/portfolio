@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { GlobalStyles } from "@mui/material";
 
 const theme = createTheme({
   typography: {
@@ -26,15 +28,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <div className="App">
-          <Navbar />
-          <About />
-          <Skills />
+        <About className="global_padding" />
+        <Skills className="global_padding" />
 
-          <Projects />
-          <Contact></Contact>
-          <Footer />
-        </div>
+        <Projects className="global_padding" />
+        <Contact className="global_padding"></Contact>
+        <Footer className="global_padding" />
       </ThemeProvider>
     </>
   );
