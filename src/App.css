@@ -44,6 +44,7 @@ p.danger {
   color: red;
 }
 
+
 @media (max-width: 540px) {
   body {
     font-size: 14px !important; /* Adjusted base font size */
@@ -57,62 +58,13 @@ p.danger {
     padding: 0 !important;
   }
 
-  h2 {
-    font-size: 20px !important; /* Adjusted font size for h2 */
-  }
-
-  h3 {
-    font-size: 18px !important; /* Adjusted font size for h3 */
-  }
-
-  h4 {
-    font-size: 13.3px !important; /* Adjusted font size for h4 */
-  }
-
-  h5 {
-    font-size: 12px !important; /* Adjusted font size for h5 */
-  }
-
-  p {
-    font-size: 12px !important; /* Adjusted font size for paragraphs */
-  }
 
   span {
     font-size: 14px !important; /* Adjusted font size for spans */
   }
 
-  /* MUI Typography (adjust as per your MUI setup) */
-  .MuiTypography-h1 {
-    font-size: 26px !important; /* MUI h1 */
-  }
-
-  .MuiTypography-h2 {
-    font-size: 22px !important; /* MUI h2 */
-  }
-
-  .MuiTypography-h3 {
-    font-size: 20px !important; /* MUI h3 */
-  }
-
-  .MuiTypography-h4 {
-    font-size: 18px !important; /* MUI h4 */
-  }
-
-  .MuiTypography-h5 {
-    font-size: 16px !important; /* MUI h5 */
-  }
-
-  .MuiTypography-h6 {
-    font-size: 14px !important; /* MUI h6 */
-  }
-
-  .MuiTypography-body1 {
-    font-size: 2em !important; /* MUI body1 */
-  }
-
-  .MuiTypography-body2 {
-    font-size: 12px !important; /* MUI body2 */
-  }
+ 
+ 
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -287,7 +239,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about-hi {
-  font-weight: bold;
+  font-weight:600;
   line-height: 1.2;
 }
 .about-hi h1 {
@@ -307,6 +259,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+@media (max-width: 750px) {
+ .banner{
+  display: block;
+ }
+ .aboutImage{
+  padding-top: 60px;
+ }
+}
+
 @media (max-width: 600px) {
   .about-hi h1 {
     font-size: 2rem !important;
@@ -319,6 +280,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .banner .avatar-picture {
     width: 200px;
     height: 200px;
+  }
+  .about-hi p {
+    font-size: 12px !important;
+    line-height: 1.5;
   }
 }
 
@@ -556,10 +521,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer img {
   width: 26%;
 }
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #b8b8b8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-}
+

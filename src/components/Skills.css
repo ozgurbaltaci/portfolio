@@ -1,21 +1,38 @@
 .skills {
   min-height: 100vh;
-  flex: 1;
   width: 100%;
 }
 
 .skills-and-experiences {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 20px;
-}
 
+}
+.skills-container{
+  padding-right: 10px;
+}
 .skills-container,
 .experiences-container {
   flex: 1;
 }
 
+@media (max-width: 970px) { 
+  
+  .skills-and-experiences{
+    display: block;
+    justify-content: center;
+  }
+  .skills-grid{
+    justify-content: center;
+  }
+}
+  
+
 @media (max-width: 600px) {
+  .skills-and-experiences {
+    
+    padding-top: 0px;
+  }
   .skills-grid {
     display: flex;
     justify-content: center;
@@ -118,7 +135,6 @@
 
 .skills_company_name {
   font-weight: bold;
-  font-size: 18px;
 }
 
 .app__skills-exp-item {
