@@ -5,25 +5,36 @@
 
 .skills-and-experiences {
   display: flex;
+  width: 100%;
   padding-top: 20px;
+  gap: 20px; 
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(2.5rem, 10vw, 4.5rem), 1fr));
+  height: fit-content !important;
+  gap: 20px;
+}
 
-}
-.skills-container{
-  padding-right: 10px;
-}
+
 .skills-container,
 .experiences-container {
-  flex: 1;
+  width: 50%; /* Yarı yarıya böl */
+  padding: 20px;
 }
 
-@media (max-width: 970px) { 
-  
-  .skills-and-experiences{
+.app__skills-exp-work-list p, ul{
+  font-size: 11px;
+}
+
+@media (max-width: 970px) {
+  .skills-and-experiences {
     display: block;
-    justify-content: center;
   }
-  .skills-grid{
-    justify-content: center;
+  
+  .skills-container,
+  .experiences-container {
+    width: 100%; /* Alt alta dizilsin */
   }
 }
   
@@ -42,12 +53,7 @@
     height: auto !important;
   }
 
-  .skills-container {
-    flex: 0 1 auto !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
+ 
 
   .skills-list {
     padding: 8px !important;
@@ -74,7 +80,6 @@
     background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   .skills-item p {
     font-size: 11px !important;
@@ -88,11 +93,7 @@
   }
 }
 
-.skills-container {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
+
 .skills-list {
   padding: 0px 30px 30px 0px;
 }
@@ -100,7 +101,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   align-items: center;
 }
 
@@ -127,7 +127,7 @@
 
 .experiences-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* İçerikleri dikey hizala */
 }
 .experiences-title {
   display: none;
@@ -160,7 +160,7 @@
 
 .app__skills-exp-work ul {
   list-style-type: disc; /* Ensures bullet points are discs */
-  margin-left: 20px; /* Adjusts the left margin for indentation */
+  margin-left: 12px; /* Adjusts the left margin for indentation */
   padding-left: 0; /* Resets padding to avoid extra space */
 }
 .skills-tooltip {
