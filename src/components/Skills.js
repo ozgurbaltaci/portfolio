@@ -190,7 +190,9 @@ const Skills = () => {
                           <a href={work.linkedin} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
                             <div style={{ display: "flex", alignItems: "center", gap: "3px" }}>
                               <p>{work.company}</p>
-                              <HiOutlineLink />
+                              <div className="icon">
+                                <HiOutlineLink />
+                              </div>
                             </div>
                           </a>
                           <p>{work.place}</p>

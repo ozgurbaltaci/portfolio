@@ -16,11 +16,15 @@
   gap: 20px;
 }
 
+.experiences-container{
+  padding-left: 40px;
+}
+
 
 .skills-container,
 .experiences-container {
   width: 50%; /* Yarı yarıya böl */
-  padding: 20px;
+ 
 }
 
 .app__skills-exp-work-list p, ul{
@@ -35,10 +39,20 @@
   .skills-container,
   .experiences-container {
     width: 100%; /* Alt alta dizilsin */
+  padding-left: 0px !important;
+
   }
 }
   
+@media (max-width: 580px) {
+  .app__skills-exp-works p, ul, .icon{
+    font-size: 8px !important;
+  }
+  .app__skills-exp-works h5, h4{
+    font-size:8px !important;
+  }
 
+}
 @media (max-width: 600px) {
   .skills-and-experiences {
     
@@ -147,11 +161,9 @@
 }
 
 .app__skills-exp-year {
-  margin-right: 3rem;
+  margin-right: 1.5rem;
 
-  p {
-    font-weight: bold;
-  }
+
 
   @media screen and (max-width: 450px) {
     margin-right: 1rem;
