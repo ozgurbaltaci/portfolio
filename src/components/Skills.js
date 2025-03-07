@@ -132,7 +132,7 @@ const experiences = [
 const Skills = () => {
   return (
     <div id="Skills&Experiences" className="skills global_padding">
-      <h2
+      <h3
         style={{
           display: "flex",
           justifyContent: "center",
@@ -144,7 +144,7 @@ const Skills = () => {
           <div>Skills</div>
           <div className="just-skills-title">&nbsp;& Experiences</div>
         </div>
-      </h2>
+      </h3>
 
       <div className="skills-and-experiences">
         <div className="skills-container">

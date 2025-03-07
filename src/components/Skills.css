@@ -42,18 +42,34 @@
   padding-left: 0px !important;
 
   }
+
+  .experiences-title {
+    display: block !important;
+    padding: 1rem 0rem 1rem 0rem !important;
+  }
+  .just-skills-title {
+    display: none !important;
+  }
+  .experiences-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+   
+  }
 }
   
+
 @media (max-width: 580px) {
+  .skills h3{
+    font-size: 0.9em;
+  }
   .app__skills-exp-works p, ul, .icon{
     font-size: 8px !important;
   }
   .app__skills-exp-works h5, h4{
     font-size:8px !important;
   }
-
-}
-@media (max-width: 600px) {
+  
   .skills-and-experiences {
     
     padding-top: 0px;
@@ -73,31 +89,26 @@
     padding: 8px !important;
   }
 
-  .experiences-container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
+ 
 
-  .experiences-title {
-    display: block !important;
-    padding: 0rem 0rem 1rem 0rem !important;
-  }
-  .just-skills-title {
-    display: none !important;
-  }
+  
 
+  .skills-container{
+    gap: 15px !important;
+  }
+ 
   .skills-item div {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
     align-items: center;
   }
   .skills-item p {
-    font-size: 11px !important;
-    width: 60px !important;
+    font-size: 8px !important;
+    
+
   }
 }
 
@@ -119,8 +130,8 @@
 }
 
 .skills-item div {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   background-color: #fff;
   display: flex;
@@ -130,8 +141,7 @@
 
 .skills-item p {
   margin-top: 0.3rem;
-  font-size: 14px;
-  width: 70px;
+  font-size: 11px;
 }
 
 .skills-item img {
