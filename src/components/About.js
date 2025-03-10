@@ -28,41 +28,7 @@ export const About = () => {
         className="banner global_padding"
         id="About"
       >
-        <div
-          className="aboutImage"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            height: "100%",
-          }}
-        >
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <img
-              src={blobPic}
-              alt="Background"
-              style={{
-                paddingTop: "10px",
-                width: "400px",
-                height: "auto",
-                objectFit: "cover",
-              }}
-            />
-            <img
-              alt="Profile Picture"
-              src={profilePicture}
-              className="avatar-picture"
-              style={{
-                width: "250px", // Set a fixed size for the avatar
-                height: "230px", // Adjust to your desired size
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                borderRadius: "50%",
-                transform: "translate(-50%, -50%)",
-              }}
-            />
-          </div>
-        </div>
+
         <div >
           <div className="about-hi">
             <h1>{`Hi! I'm Özgür`}</h1>
@@ -83,6 +49,40 @@ export const About = () => {
               With 3+ years of experience as a Full-Stack Developer, I specialize in creating responsive, visually appealing UIs and working with data.
             </p>
             <Socials></Socials>
+          </div>
+        </div>
+        <div
+          className="aboutImage"
+          style={{
+            display: "flex",
+            height: "100%",
+            textAlign: "right"
+          }}
+        >
+          <div style={{ position: "relative", display: "inline-block" }}>
+            <img
+              src={blobPic}
+              alt="Background"
+              style={{
+                width: "400px",
+                height: "auto",
+
+              }}
+            />
+            <img
+              alt="Profile Picture"
+              src={profilePicture}
+              className="avatar-picture"
+              style={{
+                width: "250px", // Set a fixed size for the avatar
+                height: "230px", // Adjust to your desired size
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                borderRadius: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            />
           </div>
         </div>
       </div>

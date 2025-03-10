@@ -5,7 +5,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { CgClose, CgMenuRight } from "react-icons/cg";
 import "./Navbar.css";
 
-export default function Navbar({}) {
+export default function Navbar({ }) {
   const [navCollapse, setNavCollapse] = useState(true);
   const [scroll, setScroll] = useState(false);
 
@@ -13,7 +13,7 @@ export default function Navbar({}) {
 
   return (
     <header className={`navbar ${scroll ? "navbar-scroll" : ""}`}>
-      <nav className="navbar-container">
+      <nav className="navbar-container global_padding">
         <a href="/" className="logo">
           ozgurbaltaci
         </a>
