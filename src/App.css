@@ -8,6 +8,12 @@
   padding: 0 3rem !important;
 }
 
+:root {
+  --appColor: rgb(244, 183, 63);
+  --secondaryText: #818181
+  
+}
+
 textarea {
   resize: none;
 }
@@ -233,13 +239,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p {
-  color: #666;
-  font-size: 18px;
-  letter-spacing: 0.8px;
+  color: var(--secondaryText);
+  font-size: 16px;
 }
 
 .about-hi {
-  font-weight:600;
+  font-weight:500;
   line-height: 1.2;
 }
 .about-hi h1 {

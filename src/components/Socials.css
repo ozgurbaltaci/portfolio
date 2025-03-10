@@ -1,0 +1,10 @@
+.socials{
+    display: flex;
+    gap:16px;
+    justify-content: center;
+    font-size: 18px;
+    padding-top: 14px;
+    color: var(--secondaryText);
+    font-weight: bold;
+    
+}

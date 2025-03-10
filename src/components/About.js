@@ -4,6 +4,7 @@ import profilePicture from "../pp.png";
 import blobPic from "../blob-haikei.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Typewriter from "typewriter-effect";
+import Socials from "./Socials";
 
 // Create the theme
 const theme = createTheme({});
@@ -33,7 +34,6 @@ export const About = () => {
             display: "flex",
             justifyContent: "center",
             height: "100%",
-            flex: 1
           }}
         >
           <div style={{ position: "relative", display: "inline-block" }}>
@@ -63,7 +63,7 @@ export const About = () => {
             />
           </div>
         </div>
-        <div style={{ flex: 2 }}>
+        <div >
           <div className="about-hi">
             <h1>{`Hi! I'm Özgür`}</h1>
             <Typewriter
@@ -82,6 +82,7 @@ export const About = () => {
             <p className="about-summary" style={{ paddingTop: "15px" }}>
               With 3+ years of experience as a Full-Stack Developer, I specialize in creating responsive, visually appealing UIs and working with data.
             </p>
+            <Socials></Socials>
           </div>
         </div>
       </div>
