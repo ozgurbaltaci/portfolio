@@ -13,6 +13,18 @@ a{
   padding: 0 7rem !important;
 }
 
+@media (max-width: 768px) {
+  .global_padding {
+    padding: 0 5rem !important;
+  }
+}
+/* Mobil için (480px ve altı) */
+@media (max-width: 480px) {
+  .global_padding {
+    padding: 0 1.4rem !important;
+  }
+}
+
 :root {
   --appColor: rgb(244, 183, 63);
   --secondaryText: #818181
