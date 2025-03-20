@@ -15,17 +15,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(clamp(2.5rem, 10vw, 4.5rem), 1fr));
   height: fit-content !important;
-  gap: 10px;
+  gap: 14px;
 }
 .experiences-list{
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap:14px;
+  padding-top:14px;
 }
 
 .skills-and-education{
   display: flex;
-  gap:40px
+  gap:40px;
+  padding-top:14px !important
 }
 
 .skills-container, .education-container{
@@ -35,7 +37,7 @@
 .education-list{
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap:14px;
 }
 
 
@@ -58,7 +60,11 @@
 }  
 .shrinked-education-title{
   display: block !important;
-  margin: 30px 0px !important;
+  margin-top: 30px !important;
+}
+
+.education-list{
+  padding-top: 14px;
 }
 
 
@@ -80,28 +86,11 @@
   }
   
 
-  .skills-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .skills {
     height: auto !important;
   }
 
- 
-
-  .skills-list {
-    padding: 8px !important;
-  }
-
- 
-
-  
-
-  .skills-container{
-    gap: 15px !important;
-  }
  
   .skills-item div {
     width: 40px !important;
@@ -112,7 +101,7 @@
     align-items: center;
   }
   .skills-item p {
-    font-size: 8px !important;
+    font-size: 9px !important;
     
 
   }

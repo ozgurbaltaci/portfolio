@@ -157,8 +157,8 @@ const Skills = () => {
 
       <div className="skills-and-experiences">
 
-        <div style={{ width: "100%", borderBottom: "2px solid black" }}><h3 >Experiences</h3></div>
         <div className="experiences-container">
+          <div style={{ width: "100%", borderBottom: "2px solid black" }}><h3 >Experiences</h3></div>
 
           <div className="experiences-list">
             {experiences.map((experience) => (
@@ -218,52 +218,54 @@ const Skills = () => {
             ))}
           </div>
         </div>
-        <div style={{ display: "flex", width: "100%", borderBottom: "2px solid black" }}><h3 >Skills</h3><h3 className="dependent-education-title">&nbsp;&&nbsp;Education</h3></div>
+        <div>
+          <div style={{ display: "flex", width: "100%", borderBottom: "2px solid black" }}><h3 >Skills</h3><h3 className="dependent-education-title">&nbsp;&&nbsp;Education</h3></div>
 
-        <div className="skills-and-education">
-          <div className="skills-container">
-            {skills.map((item, index) => (
-              <div className="skills-item" key={index}>
-                <div className="skill-icon" style={{ backgroundColor: item.backgroundColor }}>
-                  <img src={item.skillIcon} alt={item.skillName} />
+          <div className="skills-and-education">
+            <div className="skills-container">
+              {skills.map((item, index) => (
+                <div className="skills-item" key={index}>
+                  <div className="skill-icon" style={{ backgroundColor: item.backgroundColor }}>
+                    <img src={item.skillIcon} alt={item.skillName} />
+                  </div>
+                  <p>{item.skillName}</p>
                 </div>
-                <p>{item.skillName}</p>
-              </div>
-            ))}
-          </div>
-          <div className="education-container">
-            <h3 className="shrinked-education-title" style={{ display: "none", width: "100%", borderBottom: "2px solid black" }}>Education</h3>
-            <div className="education-list">
-              {education.map((education) => (
-                <div>
-
-
-
-                  <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-
-                    <h5 className="skills_company_name">{education.field}</h5>
-
-
-
-                    <p style={{ fontSize: "12px" }}>{education.workdates}</p>
-                  </div>
-
-
-                  <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-
-                    <p>{education.university}</p>
-                    <p>{education.place}</p>
-
-                  </div>
-
-                  <div className="app__skills-exp-work-list">
-                    <p>{education.description}</p>
-
-                  </div>
-
-                </div>
-
               ))}
+            </div>
+            <div className="education-container">
+              <h3 className="shrinked-education-title" style={{ display: "none", width: "100%", borderBottom: "2px solid black" }}>Education</h3>
+              <div className="education-list">
+                {education.map((education) => (
+                  <div>
+
+
+
+                    <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+
+                      <h5 className="skills_company_name">{education.field}</h5>
+
+
+
+                      <p style={{ fontSize: "12px" }}>{education.workdates}</p>
+                    </div>
+
+
+                    <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+
+                      <p>{education.university}</p>
+                      <p>{education.place}</p>
+
+                    </div>
+
+                    <div className="app__skills-exp-work-list">
+                      <p>{education.description}</p>
+
+                    </div>
+
+                  </div>
+
+                ))}
+              </div>
             </div>
           </div>
         </div>
