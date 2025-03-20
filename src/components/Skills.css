@@ -4,58 +4,67 @@
 }
 
 .skills-and-experiences {
-  display: flex;
   width: 100%;
-  padding-top: 20px;
-  gap: 20px; 
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(clamp(2.5rem, 10vw, 4.5rem), 1fr));
   height: fit-content !important;
-  gap: 20px;
+  gap: 10px;
+}
+.experiences-list{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
 
-.experiences-container{
-  padding-left: 40px;
+.skills-and-education{
+  display: flex;
+  gap:40px
+}
+
+.skills-container, .education-container{
+  width: 50%;
+}
+
+.education-list{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
 
 
-.skills-container,
-.experiences-container {
-  width: 50%; /* Yarı yarıya böl */
- 
-}
 
 .app__skills-exp-work-list p, ul{
-  font-size: 11px;
+  font-size: 12px;
 }
 
+
 @media (max-width: 970px) {
-  .skills-and-experiences {
-    display: block;
-  }
+.skills-and-education{
+  display: block;
+}
+.skills-container, .education-container{
+  width: 100%;
+}
+
+.dependent-education-title{
+  display: none;
+}  
+.shrinked-education-title{
+  display: block !important;
+  margin: 30px 0px !important;
+}
+
+
   
-  .skills-container,
-  .experiences-container {
-    width: 100%; /* Alt alta dizilsin */
-  padding-left: 0px !important;
 
-  }
 
-  .experiences-title {
-    display: block !important;
-    padding: 1rem 0rem 1rem 0rem !important;
-  }
-  .just-skills-title {
-    display: none !important;
-  }
-  .experiences-container {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-   
-  }
 }
   
 
@@ -64,16 +73,13 @@
     font-size: 0.9em;
   }
   .app__skills-exp-works p, ul, .icon{
-    font-size: 8px !important;
+    font-size: 10px !important;
   }
   .app__skills-exp-works h5, h4{
-    font-size:8px !important;
+    font-size:10px !important;
   }
   
-  .skills-and-experiences {
-    
-    padding-top: 0px;
-  }
+
   .skills-grid {
     display: flex;
     justify-content: center;
@@ -141,7 +147,7 @@
 
 .skills-item p {
   margin-top: 0.3rem;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .skills-item img {

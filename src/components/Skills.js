@@ -18,7 +18,7 @@ import { HiOutlineLink } from "react-icons/hi2";
 
 
 import { Tooltip } from "react-tooltip";
-import { Grid } from "@mui/system";
+import { borderBottom, Grid } from "@mui/system";
 import "./Skills.css";
 
 const skills = [
@@ -129,37 +129,37 @@ const experiences = [
   },
 ];
 
+const education = [
+
+  {
+    field: "Computer Science and Engineering",
+    university: "Akdeniz University",
+    place: "Antalya, Türkiye",
+    workdates: "09/2019 - 07/2024",
+    description: "GPA: 3.39/4.0"
+  },
+  {
+    field: "Business and Economics",
+    university: "Mendelu University",
+    place: "Brno, Czech Republic",
+    workdates: "02/2023 - 07/2023",
+    description: "Erasmus+ study exchange"
+  },
+
+
+
+];
+
 const Skills = () => {
   return (
     <div id="Skills&Experiences" className="skills global_padding">
-      <h3
-        style={{
-          display: "flex",
-          justifyContent: "center",
 
-          padding: "1rem 0rem",
-        }}
-      >
-        <div style={{ display: "flex" }}>
-          <div>Skills</div>
-          <div className="just-skills-title">&nbsp;& Experiences</div>
-        </div>
-      </h3>
 
       <div className="skills-and-experiences">
-        <div className="skills-container">
-          {skills.map((item, index) => (
-            <div className="skills-item" key={index}>
-              <div className="skill-icon" style={{ backgroundColor: item.backgroundColor }}>
-                <img src={item.skillIcon} alt={item.skillName} />
-              </div>
-              <p>{item.skillName}</p>
-            </div>
-          ))}
-        </div>
 
+        <div style={{ width: "100%", borderBottom: "2px solid black" }}><h3 >Experiences</h3></div>
         <div className="experiences-container">
-          <h3 className="experiences-title">Experiences</h3>
+
           <div className="experiences-list">
             {experiences.map((experience) => (
               <div>
@@ -181,11 +181,11 @@ const Skills = () => {
 
 
 
-                          <p style={{ fontSize: "11px" }}>{work.workdates}</p>
+                          <p style={{ fontSize: "12px" }}>{work.workdates}</p>
                         </div>
 
 
-                        <div style={{ fontSize: "11px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
                           <a href={work.linkedin} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
                             <div style={{ display: "flex", alignItems: "center", gap: "3px" }}>
@@ -216,6 +216,55 @@ const Skills = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div style={{ display: "flex", width: "100%", borderBottom: "2px solid black" }}><h3 >Skills</h3><h3 className="dependent-education-title">&nbsp;&&nbsp;Education</h3></div>
+
+        <div className="skills-and-education">
+          <div className="skills-container">
+            {skills.map((item, index) => (
+              <div className="skills-item" key={index}>
+                <div className="skill-icon" style={{ backgroundColor: item.backgroundColor }}>
+                  <img src={item.skillIcon} alt={item.skillName} />
+                </div>
+                <p>{item.skillName}</p>
+              </div>
+            ))}
+          </div>
+          <div className="education-container">
+            <h3 className="shrinked-education-title" style={{ display: "none", width: "100%", borderBottom: "2px solid black" }}>Education</h3>
+            <div className="education-list">
+              {education.map((education) => (
+                <div>
+
+
+
+                  <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+
+                    <h5 className="skills_company_name">{education.field}</h5>
+
+
+
+                    <p style={{ fontSize: "12px" }}>{education.workdates}</p>
+                  </div>
+
+
+                  <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+
+                    <p>{education.university}</p>
+                    <p>{education.place}</p>
+
+                  </div>
+
+                  <div className="app__skills-exp-work-list">
+                    <p>{education.description}</p>
+
+                  </div>
+
+                </div>
+
+              ))}
+            </div>
           </div>
         </div>
       </div>
