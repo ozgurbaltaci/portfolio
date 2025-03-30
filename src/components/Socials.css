@@ -1,7 +1,6 @@
 .socials{
     display: flex;
     gap:16px;
-    padding-top: 14px;
     font-size: 18px;
 
     color: var(--secondaryText);

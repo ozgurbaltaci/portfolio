@@ -64,9 +64,9 @@ const experiences = [
         workdates: "01/2025 - Present",
         technologies_used: "Flutterflow, Figma, GraphQL, Flask",
         desc: [
-          "Experienced in FlutterFlow for fully responsive web/mobile development. Learning GraphQL & Flask to enhance backend capabilities.",
-          "Skilled in Figma to create responsive, user-friendly designs with a focus on seamless UX.",
-          "Proficient in Jira, collaborating in Agile teams for efficient development and problem-solving."
+          " Collaborated within a dynamic, international Agile team located in Barcelona, where the opportunity to work alongside professionals from diverse backgrounds enriched my problem-solving, communication, and development skills, ensuring high-quality project delivery.",
+          "Gained valuable experience in FlutterFlow, developing fully responsive web and mobile applications, while expanding backend knowledge through ongoing learning of GraphQL and Flask to enhance system capabilities.",
+          "Designed user-centric, responsive interfaces using Figma, prioritizing seamless user experience and intuitive design for both web and mobile platforms."
         ],
       },
     ],
@@ -75,7 +75,7 @@ const experiences = [
     year: "2023",
     works: [
       {
-        name: "Part-time Front-end Developer",
+        name: "Part-time Software Engineer",
         company: "Turkish Aerospace (TUSAS)",
         linkedin: "https://www.linkedin.com/company/turkishaerospace/posts/?feedView=all",
 
@@ -84,10 +84,7 @@ const experiences = [
         workdates: "12/2022 - 02/2023",
         technologies_used: "ReactJS, MaterialUI, NodeJS, PostgreSQL",
         desc: [
-          "Achieved 60% growth for a responsive and user-friendly dashboard using ReactJS, and MaterialUI skills.",
-          "Contributed to front-end development, achieving a 100% improvement in user interface responsiveness and overall user experience.",
-          "Contributed to Agile and Scrum methodologies, ensuring efficient project delivery throughout the Software Development Life Cycle (SDLC)."
-        ],
+          "Achieved 60% growth for a responsive and user-friendly dashboard using ReactJS and Material-UI, collaborating with a professional development team to ensure high-quality implementation.", "Worked closely with senior developers to enhance user interface responsiveness and overall user experience, leading to a 100% improvement in performance and usability.", "Contributed to Agile and Scrum methodologies, ensuring efficient project delivery throughout the Software Development Life Cycle (SDLC), while learning from seasoned professionals who guided our 13-person team through best practices and real-world challenges."],
       },
     ],
   },
@@ -95,7 +92,7 @@ const experiences = [
     year: "2022",
     works: [
       {
-        name: "Intern Software Developer - Long Term",
+        name: "Long Term Software Engineer Intern",
         company: "Turkish Aerospace (TUSAS)",
         linkedin: "https://www.linkedin.com/company/turkishaerospace/posts/?feedView=all",
 
@@ -103,10 +100,7 @@ const experiences = [
         workdates: "12/2021 - 07/2022",
         technologies_used: "ReactJS, Bootstrap, Express JS, Next JS",
         desc: [
-          "Achieved 85% growth for an comprehensive, responsive and user-friendly Data Management System using ReactJS, Bootstrap, ExpressJS and NextJS skills.",
-          "Developed comprehensive user requirement and use case documents for 2 projects, improving team alignment and reducing revisions by 70% through effective communication and thorough documentation skills",
-          "Contributed to Agile and Scrum methodologies, ensuring efficient project delivery throughout the Software Development Life Cycle (SDLC)."
-        ],
+          "Achieved 95% growth for a comprehensive, responsive, and user-friendly Data Management System using ReactJS, Bootstrap, NodeJS, and ExpressJS. Gained valuable insights from an experienced mentor while collaborating on a business project, enhancing my project management skills and cross-disciplinary experience.", "Developed comprehensive user requirement and use case documents for two projects, improving team alignment and reducing revisions by 70% through effective communication and thorough documentation. This experience reinforced my ability to structure and manage project workflows efficiently.", "Contributed to Agile and Scrum methodologies, ensuring efficient project delivery throughout the Software Development Life Cycle (SDLC), while learning from seasoned professionals who guided our 13-person team through best practices and real-world challenges."],
       },
     ],
   },
@@ -121,8 +115,7 @@ const experiences = [
         workdates: "10/2021 - 12/2021",
         technologies_used: "Vue JS",
         desc: [
-          "Developed foundational skills in front-end development by building 10+ interactive web components using VueJS, gaining hands-on experience and improving proficiency in JavaScript frameworks during my early stage of learning.",
-
+          "Worked on real-world projects for the first time through a volunteer-based initiative, applying theoretical knowledge to practical challenges while enhancing teamwork and problem-solving skills.", "Developed foundational skills in front-end development by building 10+ interactive web components using VueJS, gaining hands-on experience and improving proficiency in JavaScript frameworks during my early stage of learning."
         ],
       },
     ],

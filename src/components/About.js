@@ -5,6 +5,8 @@ import blobPic from "../blob-haikei.png";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Typewriter from "typewriter-effect";
 import Socials from "./Socials";
+import resume from "../Resume/Ozgur_Baltaci_Resume.pdf"
+import { PiReadCvLogoBold } from "react-icons/pi";
 
 // Create the theme
 const theme = createTheme({});
@@ -32,23 +34,29 @@ export const About = () => {
         <div >
           <div className="about-hi">
             <h1>{`Hi! I'm Özgür`}</h1>
-            <Typewriter
-              className="type-writer"
-              options={{
-                strings: titles,
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 100,
-                delay: 100,
-                wrapperClassName: "txt-rotate",
-                cursorClassName: "txt-rotate",
-              }}
-            />
+            <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+              <Typewriter
+                className="type-writer"
+                options={{
+                  strings: titles,
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 100,
+                  delay: 100,
+                  wrapperClassName: "txt-rotate",
+                  cursorClassName: "txt-rotate",
+                }}
+              />
 
-            <p className="about-summary" style={{ paddingTop: "15px" }}>
-              With 3+ years of experience as a Full-Stack Developer, I specialize in creating responsive, visually appealing UIs and working with data.
-            </p>
-            <Socials></Socials>
+              <p className="about-summary" >
+                With 3+ years of experience as a Full-Stack Developer, I specialize in creating responsive, visually appealing UIs and working with data.
+              </p>
+              <Socials></Socials>
+              <button className="download-resume" style={{ display: "flex", gap: "5px", alignItems: "center", cursor: "pointer" }}>
+                <a href={resume} download={'Ozgur_Baltaci_Resume'}>Download CV</a>
+                <PiReadCvLogoBold />
+              </button>
+            </div>
           </div>
         </div>
         <div

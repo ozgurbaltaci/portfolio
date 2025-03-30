@@ -4,6 +4,9 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { FaNodeJs } from "react-icons/fa";
 import { CgClose, CgMenuRight } from "react-icons/cg";
 import "./Navbar.css";
+import profilePicture from "../pp.png";
+import blobPic from "../blob-haikei.png";
+
 
 export default function Navbar({ }) {
   const [navCollapse, setNavCollapse] = useState(true);
@@ -14,9 +17,32 @@ export default function Navbar({ }) {
   return (
     <header className={`navbar ${scroll ? "navbar-scroll" : ""}`}>
       <nav className="navbar-container global_padding">
-        <a href="/" className="logo">
-          ozgurbaltaci
-        </a>
+        <div style={{ position: "relative", display: "inline-block", cursor: "pointer", marginLeft: "-10px" }}>
+          <img
+            src={blobPic}
+            alt="Background"
+            style={{
+              width: "52px",
+              height: "auto",
+              paddingTop: "8px",
+
+            }}
+          />
+          <img
+            alt="Profile Picture"
+            src={profilePicture}
+            className="avatar-picture"
+            style={{
+              width: "33px", // Set a fixed size for the avatar
+              height: "30px", // Adjust to your desired size
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              borderRadius: "50%",
+              transform: "translate(-50%, -50%)",
+            }}
+          />
+        </div>
 
         <ul className="nav-links">
           {navs.map((e) => (
