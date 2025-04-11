@@ -10,7 +10,11 @@ const ProjectCard = ({ project }) => {
   };
 
   const handleDeployedDemoClick = () => {
-    window.open(project.liveLink, "_blank");
+    if (project.liveLink !== "") {
+      window.open(project.liveLink, "_blank");
+    } else {
+      alert("I am sorry :( This project is not deployed yet.");
+    }
   };
 
   const handleLiveDemoClick = () => {
@@ -41,12 +45,14 @@ const ProjectCard = ({ project }) => {
             </button>
           </div>
         </div>
-        <h4 style={{ fontWeight: "500" }}>{project.projectName}</h4>
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
-          <p style={{ fontWeight: "500" }}>Tech Stack:&nbsp;</p>
-          <p>{project.technologiesUsed}</p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
+          <h4 style={{ fontWeight: "500" }}>{project.projectName}</h4>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <p style={{ fontWeight: "500" }}>Tech Stack:&nbsp;</p>
+            <p>{project.technologiesUsed}</p>
+          </div>
+          <p>{project.projectDescription}</p>
         </div>
-        <p>{project.projectDescription}</p>
       </div>
     </div>
   );
