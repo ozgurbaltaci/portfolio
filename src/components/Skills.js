@@ -12,6 +12,8 @@ import htmlIcon from "../SkillPictures/html.png";
 import cssIcon from "../SkillPictures/css.png";
 import bootstrapIcon from "../SkillPictures/bootstrap.svg";
 import javaIcon from "../SkillPictures/java.png";
+import typeScriptIcon from "../SkillPictures/typescript.png";
+
 import reduxIcon from "../SkillPictures/redux.png";
 import graphqlIcon from "../SkillPictures/graphql.png";
 import { HiOutlineLink } from "react-icons/hi2";
@@ -40,6 +42,8 @@ const skills = [
   { skillName: "Figma", skillIcon: figmaIcon, backgroundColor: "#FDE2D3" },
 
   { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
+  { skillName: "TypeScript", skillIcon: typeScriptIcon, backgroundColor: "#D6E7FF" },
+
   { skillName: "HTML5", skillIcon: htmlIcon, backgroundColor: "#ffe0cc" },
   { skillName: "CSS3", skillIcon: cssIcon, backgroundColor: "#E1EAF4" },
 
