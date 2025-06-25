@@ -56,26 +56,29 @@ const projects = [
 const Projects = () => {
   return (
     <div id="Projects" className="projects global_padding">
-      <h2
-        style={{
-          display: "flex",
-          justifyContent: "center",
+      <div style={{ padding: "30px 0" }}>
+        <h2
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingBottom: "1rem"
 
-          padding: "1rem 0rem",
-        }}
-      >
-        <div style={{ display: "flex" }}>
-          <div>Projects</div>
+
+          }}
+        >
+          <div style={{ display: "flex" }}>
+            <div>Projects</div>
+          </div>
+        </h2>{" "}
+        <div className="projects-container">
+          <Grid container spacing={3}>
+            {projects.map((item, index) => (
+              <Grid item xs={12} sm={6} md={4}>
+                <ProjectCard project={item} />
+              </Grid>
+            ))}
+          </Grid>
         </div>
-      </h2>{" "}
-      <div className="projects-container">
-        <Grid container spacing={3}>
-          {projects.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4}>
-              <ProjectCard project={item} />
-            </Grid>
-          ))}
-        </Grid>
       </div>
     </div>
   );
