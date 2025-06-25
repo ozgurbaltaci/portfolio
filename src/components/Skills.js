@@ -16,6 +16,8 @@ import typeScriptIcon from "../SkillPictures/typescript.png";
 
 import reduxIcon from "../SkillPictures/redux.png";
 import graphqlIcon from "../SkillPictures/graphql.png";
+import dotnetIcon from "../SkillPictures/dotnet.png";
+
 import { HiOutlineLink } from "react-icons/hi2";
 
 
@@ -36,13 +38,16 @@ const skills = [
     backgroundColor: "#E1EAF4",
   },
   { skillName: "Python", skillIcon: pythonIcon, backgroundColor: "#fffbe3" },
+  { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
+  { skillName: "TypeScript", skillIcon: typeScriptIcon, backgroundColor: "#D6E7FF" },
+
+  { skillName: ".NET", skillIcon: dotnetIcon, backgroundColor: "#f3e5f5" },
+
   { skillName: "GraphQL", skillIcon: graphqlIcon, backgroundColor: "#F8EEFF" },
 
 
   { skillName: "Figma", skillIcon: figmaIcon, backgroundColor: "#FDE2D3" },
 
-  { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
-  { skillName: "TypeScript", skillIcon: typeScriptIcon, backgroundColor: "#D6E7FF" },
 
   { skillName: "HTML5", skillIcon: htmlIcon, backgroundColor: "#ffe0cc" },
   { skillName: "CSS3", skillIcon: cssIcon, backgroundColor: "#E1EAF4" },
