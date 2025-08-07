@@ -11,13 +11,13 @@ import reactIcon from "../SkillPictures/react.webp";
 import htmlIcon from "../SkillPictures/html.png";
 import cssIcon from "../SkillPictures/css.png";
 import bootstrapIcon from "../SkillPictures/bootstrap.svg";
-import javaIcon from "../SkillPictures/java.png";
 import typeScriptIcon from "../SkillPictures/typescript.png";
 
 import reduxIcon from "../SkillPictures/redux.png";
 import graphqlIcon from "../SkillPictures/graphql.png";
 import dotnetIcon from "../SkillPictures/dotnet.png";
 
+import javaIcon from "../SkillPictures/java_icon.png"
 import { HiOutlineLink } from "react-icons/hi2";
 
 
@@ -40,6 +40,9 @@ const skills = [
   { skillName: "Python", skillIcon: pythonIcon, backgroundColor: "#fffbe3" },
   { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
   { skillName: "TypeScript", skillIcon: typeScriptIcon, backgroundColor: "#D6E7FF" },
+
+  { skillName: "Java", skillIcon: javaIcon, backgroundColor: "#FFF3E1" },
+
 
   { skillName: ".NET", skillIcon: dotnetIcon, backgroundColor: "#f3e5f5" },
 
