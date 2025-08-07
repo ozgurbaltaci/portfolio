@@ -70,7 +70,7 @@ const experiences = [
         company: "Proceedit",
         linkedin: "https://www.linkedin.com/company/proceedit-the-bpm-process'%E2%80%8B-factory-/posts/?feedView=all",
         place: "Barcelona, Spain",
-        workdates: "01/2025 - Present",
+        workdates: "01/2025 - 07/2025",
         technologies_used: "Flutterflow, Figma, GraphQL, Flask",
         desc: [
           " Collaborated within a dynamic, international Agile team located in Barcelona, where the opportunity to work alongside professionals from diverse backgrounds enriched my problem-solving, communication, and development skills, ensuring high-quality project delivery.",

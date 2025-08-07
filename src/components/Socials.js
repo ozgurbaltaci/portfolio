@@ -11,7 +11,7 @@ const Socials = () => {
         <div className='socials'>
             <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
                 <CiLocationOn />
-                <p>Barcelona,Spain</p>
+                <p>Istanbul, Turkey</p>
             </div>
             <div style={{ borderLeft: "1px solid var(--secondaryText)", height: "20px" }}></div>
 
@@ -24,10 +24,7 @@ const Socials = () => {
 
                 <CiMail />
             </a>
-            <a href={`tel:${process.env.REACT_APP_PHONE}`} className='social_icon'>
-                <CiPhone />
 
-            </a>
 
 
         </div>
