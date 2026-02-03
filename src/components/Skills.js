@@ -88,26 +88,24 @@ const skills = [
 ];
 
 const experiences = [
-  {
-    year: "2026",
-    works: [{
-      image: amadeusLogo,
-      name: "Software Development Engineer",
-      company: "Amadeus",
-      linkedin: "https://www.linkedin.com/company/amadeus/posts/?feedView=all",
-      place: "Istanbul, Türkiye",
-      workdates: "11/2025 - Current",
-      technologies_used: "TypeScript, GA4, GTM, Analytics Canvas, Qlik, BigQuery",
-      desc: [
-        "Implementing enhanced user-event tracking library for more than 50 airlines by using TypeScript.",
-        "Collaborated within a dynamic, internation Agile team with colleagues from all around the world.",
-        "Working closely with data by using GA4, GTM, LookerStudio, Analytics Canvas, and Qlik."
-      ],
-    },]
-  },
+
   {
     year: "2025",
     works: [
+      {
+        image: amadeusLogo,
+        name: "Software Development Engineer",
+        company: "Amadeus",
+        linkedin: "https://www.linkedin.com/company/amadeus/posts/?feedView=all",
+        place: "Istanbul, Türkiye",
+        workdates: "11/2025 - Current",
+        technologies_used: "TypeScript, GA4, GTM, Analytics Canvas, Qlik, BigQuery",
+        desc: [
+          "Implementing enhanced user-event tracking library for more than 50 airlines by using TypeScript.",
+          "Collaborated within a dynamic, internation Agile team with colleagues from all around the world.",
+          "Working closely with data by using GA4, GTM, LookerStudio, Analytics Canvas, and Qlik."
+        ],
+      },
       {
         image: proceeditLogo,
         name: "Full-stack Developer Erasmus+ Intern",
