@@ -7,91 +7,104 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  gap: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.desc_li_item {
+  margin-bottom: 5px;
+}
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(2.5rem, 10vw, 4.5rem), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(2.5rem, 10vw, 4.5rem), 1fr)
+  );
   height: fit-content !important;
   gap: 14px;
 }
-.experiences-list{
+.experiences-list {
   display: flex;
   flex-direction: column;
-  gap:14px;
-  padding-top:14px;
-}
-
-.skills-and-education{
-  display: flex;
-  gap:40px;
-  padding-top:14px !important
-}
-
-.skills-container, .education-container{
-  width: 50%;
-}
-
-.education-list{
-  display: flex;
-  flex-direction: column;
-  gap:14px;
-}
-
-
-
-.app__skills-exp-work-list p, ul{
-  font-size: 12px;
-}
-
-
-@media (max-width: 970px) {
-.skills-and-education{
-  display: block;
-}
-.skills-container, .education-container{
-  width: 100%;
-}
-
-.dependent-education-title{
-  display: none;
-}  
-.shrinked-education-title{
-  display: block !important;
-  margin-top: 30px !important;
-}
-
-.education-list{
+  gap: 14px;
   padding-top: 14px;
 }
 
-
-  
-
-
+.skills-and-education {
+  display: flex;
+  gap: 40px;
+  padding-top: 14px !important;
 }
-  
+
+.skills-container,
+.education-container {
+  width: 50%;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.app__skills-exp-work-list p,
+ul {
+  font-size: 12px;
+}
+
+@media (max-width: 970px) {
+  .skills-and-education {
+    display: block;
+  }
+  .skills-container,
+  .education-container {
+    width: 100%;
+  }
+
+  .dependent-education-title {
+    display: none;
+  }
+  .shrinked-education-title {
+    display: block !important;
+    margin-top: 30px !important;
+  }
+
+  .education-list {
+    padding-top: 14px;
+  }
+}
 
 @media (max-width: 580px) {
-  .skills h3{
+  .skills h3 {
     font-size: 0.9em;
   }
-  .app__skills-exp-works p, ul, .icon{
-    font-size: 10px !important;
+  .app__skills-exp-works p,
+  ul,
+  .icon {
+    font-size: 8px !important;
   }
-  .app__skills-exp-works h5, h4{
-    font-size:10px !important;
+  .app__skills-exp-works h5,
+  h4 {
+    font-size: 8px !important;
   }
-  
+  .company_logo {
+    width: 30px !important;
+    height: 30px !important;
+  }
 
-  
+  .desc_li_item {
+    margin-bottom: 1px;
+  }
+
+  .app__skills-exp-year {
+    margin-right: 0.5rem !important;
+  }
+
   .skills {
     height: auto !important;
   }
 
- 
   .skills-item div {
     width: 40px !important;
     height: 40px !important;
@@ -102,8 +115,6 @@
   }
   .skills-item p {
     font-size: 9px !important;
-    
-
   }
 }
 
@@ -112,7 +123,6 @@
     height: auto !important;
   }
 }
-
 
 .skills-list {
   padding: 0px 30px 30px 0px;
@@ -167,12 +177,6 @@
 
 .app__skills-exp-year {
   margin-right: 1.5rem;
-
-
-
-  @media screen and (max-width: 450px) {
-    margin-right: 1rem;
-  }
 }
 
 .app__skills-exp-work ul {

@@ -17,7 +17,7 @@ export const About = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(180);
   const [index, setIndex] = useState(1);
-  const titles = ["Software Engineer", "Full-stack Developer", "UI/UX Designer", "Data Engineer"];
+  const titles = ["Software Development Engineer", "Data Engineer", "Full-stack Developer"];
   const period = 1600;
 
   return (
@@ -49,7 +49,7 @@ export const About = () => {
               />
 
               <p className="about-summary" >
-                With 3+ years of experience as a Full-Stack Developer, I specialize in creating responsive, visually appealing UIs and working with data.
+                With 3+ years of experience as a Software Development Engineer, I specialize in user event tracking, building responsive and visually engaging UIs, and handling data effectively.
               </p>
               <Socials></Socials>
               <button className="download-resume" style={{ display: "flex", gap: "5px", alignItems: "center", cursor: "pointer" }}>

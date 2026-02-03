@@ -12,10 +12,24 @@ import htmlIcon from "../SkillPictures/html.png";
 import cssIcon from "../SkillPictures/css.png";
 import bootstrapIcon from "../SkillPictures/bootstrap.svg";
 import typeScriptIcon from "../SkillPictures/typescript.png";
+import amadeusLogo from "../CompanyLogos/amadeus_logo.jpeg";
+import proceeditLogo from "../CompanyLogos/proceedit_logo.jpg";
+import tusasLogo from "../CompanyLogos/tusas_logo.png";
+import jeliaiLogo from "../CompanyLogos/jeliai_logo.svg";
+
+
 
 import reduxIcon from "../SkillPictures/redux.png";
 import graphqlIcon from "../SkillPictures/graphql.png";
 import dotnetIcon from "../SkillPictures/dotnet.png";
+
+import ga4Icon from "../SkillPictures/ga4_logo.png";
+import gtmIcon from "../SkillPictures/gtm_logo.png";
+import gcpLogo from "../SkillPictures/gcp_logo.png";
+
+import angularIcon from "../SkillPictures/angular_logo.png"
+
+
 
 import javaIcon from "../SkillPictures/java_icon.png"
 import { HiOutlineLink } from "react-icons/hi2";
@@ -26,12 +40,21 @@ import { borderBottom, Grid } from "@mui/system";
 import "./Skills.css";
 
 const skills = [
+  { skillName: "TypeScript", skillIcon: typeScriptIcon, backgroundColor: "#D6E7FF" },
+  { skillName: "GA4", skillIcon: ga4Icon, backgroundColor: "#FDE2D3" },
+  { skillName: "GTM", skillIcon: gtmIcon, backgroundColor: "#e0f3ff" },
+  { skillName: "GCP", skillIcon: gcpLogo, backgroundColor: "#FFF7CC" },
+
   { skillName: "ReactJS", skillIcon: reactIcon, backgroundColor: "#e9f7ff" },
   { skillName: "ReduxJS", skillIcon: reduxIcon, backgroundColor: "#f3e5f5" },
-
   { skillName: "MUI", skillIcon: muiIcon, backgroundColor: "#e0f3ff" },
-  { skillName: "FlutterFlow", skillIcon: flutterFlowIcon, backgroundColor: "#EBE6F6" },
+  { skillName: "Angular", skillIcon: angularIcon, backgroundColor: "#f5e5ecff" },
   { skillName: "NodeJS", skillIcon: nodejsIcon, backgroundColor: "#e4ffe5" },
+
+  { skillName: "FlutterFlow", skillIcon: flutterFlowIcon, backgroundColor: "#EBE6F6" },
+
+
+
   {
     skillName: "PostgreSQL",
     skillIcon: postgresqlIcon,
@@ -39,7 +62,7 @@ const skills = [
   },
   { skillName: "Python", skillIcon: pythonIcon, backgroundColor: "#fffbe3" },
   { skillName: "JavaScript", skillIcon: jsIcon, backgroundColor: "#FFF7CC" },
-  { skillName: "TypeScript", skillIcon: typeScriptIcon, backgroundColor: "#D6E7FF" },
+
 
   { skillName: "Java", skillIcon: javaIcon, backgroundColor: "#FFF3E1" },
 
@@ -66,9 +89,27 @@ const skills = [
 
 const experiences = [
   {
+    year: "2026",
+    works: [{
+      image: amadeusLogo,
+      name: "Software Development Engineer",
+      company: "Amadeus",
+      linkedin: "https://www.linkedin.com/company/amadeus/posts/?feedView=all",
+      place: "Istanbul, Türkiye",
+      workdates: "11/2025 - Current",
+      technologies_used: "TypeScript, GA4, GTM, Analytics Canvas, Qlik, BigQuery",
+      desc: [
+        "Implementing enhanced user-event tracking library for more than 50 airlines by using TypeScript",
+        "Collaborated within a dynamic, internation Agile team with colleagues from all around the world.",
+        "Working closely with data by using GA4, GTM, LookerStudio, Analytics Canvas, and Qlik."
+      ],
+    },]
+  },
+  {
     year: "2025",
     works: [
       {
+        image: proceeditLogo,
         name: "Full-stack Developer Erasmus+ Intern",
         company: "Proceedit",
         linkedin: "https://www.linkedin.com/company/proceedit-the-bpm-process'%E2%80%8B-factory-/posts/?feedView=all",
@@ -87,6 +128,7 @@ const experiences = [
     year: "2023",
     works: [
       {
+        image: tusasLogo,
         name: "Part-time Software Engineer",
         company: "Turkish Aerospace (TUSAS)",
         linkedin: "https://www.linkedin.com/company/turkishaerospace/posts/?feedView=all",
@@ -104,6 +146,7 @@ const experiences = [
     year: "2022",
     works: [
       {
+        image: tusasLogo,
         name: "Long Term Software Engineer Intern",
         company: "Turkish Aerospace (TUSAS)",
         linkedin: "https://www.linkedin.com/company/turkishaerospace/posts/?feedView=all",
@@ -120,6 +163,7 @@ const experiences = [
     year: "2021",
     works: [
       {
+        image: jeliaiLogo,
         name: "Volunteer Software Developer Intern",
         company: "Jeli AI",
         linkedin: "https://www.linkedin.com/company/jeliai/",
@@ -174,44 +218,40 @@ const Skills = () => {
                   </div>
                   <div className="app__skills-exp-works">
                     {experience.works.map((work) => (
-
                       <div
                         className="app__skills-exp-work"
                         key={work.name}
-
                       >
-                        <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <div style={{ display: "flex", width: "100%", gap: "5px" }}>
+                          <img className="company_logo" style={{ width: "45px", height: "45px", borderRadius: "50%", backgroundColor: "rgb(249, 249, 250)" }} src={work.image}></img>
 
-                          <h5 className="skills_company_name">{work.name}</h5>
-
-
-
-                          <p style={{ fontSize: "12px" }}>{work.workdates}</p>
-                        </div>
-
-
-                        <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-
-                          <a href={work.linkedin} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
-                            <div style={{ display: "flex", alignItems: "center", gap: "3px" }}>
-                              <p>{work.company}</p>
-                              <div className="icon">
-                                <HiOutlineLink />
-                              </div>
+                          <div style={{ width: "100%" }}>
+                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                              <h5 className="skills_company_name">{work.name}</h5>
+                              <p style={{ fontSize: "12px" }}>{work.workdates}</p>
                             </div>
-                          </a>
-                          <p>{work.place}</p>
+                            <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                              <a href={work.linkedin} target="_blank" style={{ textDecoration: "none", color: "#000000" }}>
+                                <div style={{ display: "flex", alignItems: "center", gap: "3px" }}>
+                                  <p>{work.company}</p>
+                                  <div className="icon">
+                                    <HiOutlineLink />
+                                  </div>
+                                </div>
+                              </a>
+                              <p>{work.place}</p>
+                            </div>
+                            <div className="app__skills-exp-work-list">
+                              <ul style={{ padding: 0 }}>
+                                {work.desc.map((item, index) => (
+                                  <li key={index} className="desc_li_item">
+                                    {item}
+                                  </li>
+                                ))}
+                              </ul>
 
-                        </div>
-
-                        <div className="app__skills-exp-work-list">
-                          <ul style={{ padding: 0 }}>
-                            {work.desc.map((item, index) => (
-                              <li key={index} style={{ marginBottom: "5px" }}>
-                                {item}
-                              </li>
-                            ))}
-                          </ul>
+                            </div>
+                          </div>
 
                         </div>
 
@@ -242,31 +282,17 @@ const Skills = () => {
               <div className="education-list">
                 {education.map((education) => (
                   <div>
-
-
-
                     <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-
                       <h5 className="skills_company_name">{education.field}</h5>
-
-
-
                       <p style={{ fontSize: "12px" }}>{education.workdates}</p>
                     </div>
-
-
                     <div style={{ fontSize: "12px", fontStyle: "italic", width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-
                       <p>{education.university}</p>
                       <p>{education.place}</p>
-
                     </div>
-
                     <div className="app__skills-exp-work-list">
                       <p>{education.description}</p>
-
                     </div>
-
                   </div>
 
                 ))}
