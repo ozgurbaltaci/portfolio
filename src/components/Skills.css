@@ -27,7 +27,7 @@
 .experiences-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 17px;
   padding-top: 14px;
 }
 
