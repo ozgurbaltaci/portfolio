@@ -99,7 +99,7 @@ const experiences = [
       workdates: "11/2025 - Current",
       technologies_used: "TypeScript, GA4, GTM, Analytics Canvas, Qlik, BigQuery",
       desc: [
-        "Implementing enhanced user-event tracking library for more than 50 airlines by using TypeScript",
+        "Implementing enhanced user-event tracking library for more than 50 airlines by using TypeScript.",
         "Collaborated within a dynamic, internation Agile team with colleagues from all around the world.",
         "Working closely with data by using GA4, GTM, LookerStudio, Analytics Canvas, and Qlik."
       ],
